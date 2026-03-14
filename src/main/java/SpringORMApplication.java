@@ -14,10 +14,10 @@ public class SpringORMApplication {
 		StudentDao studentDao = context.getBean("studentDao", StudentDao.class);
 
 		Student stud = new Student();
-		stud.setId("20304");
+		stud.setId("20306");
 		stud.setName("ORM Abhishek");
 
-		studentDao.insert(stud);
+		// studentDao.insert(stud);
 
 		List<Student> studList = studentDao.loadAll();
 
